@@ -1,0 +1,3 @@
+[submodule "kit-alumini-portal"] 
+  path = kit-alumini-portal 
+  url = git://https://github.com/Shailesh0811/alumini-portal-client.git

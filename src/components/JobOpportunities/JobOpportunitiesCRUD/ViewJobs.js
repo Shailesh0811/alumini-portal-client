@@ -21,7 +21,7 @@ function ViewJobs() {
 
     useEffect(() => {
 
-        let toReq = 'http://localhost:3001/getJobs/' + 'all/' + 'all';
+        let toReq = 'http://my-project-kitcoek.herokuapp.com/getJobs/' + 'all/' + 'all';
         Axios.get(toReq).then((response) => {
             const someList = response.data;
             setJobList(someList);
@@ -52,7 +52,7 @@ function ViewJobs() {
     const applyFilter = (e) => {
         e.preventDefault();
 
-        let toReq = 'http://localhost:3001/getJobs/' + filter + '/' + value;
+        let toReq = 'http://my-project-kitcoek.herokuapp.com/getJobs/' + filter + '/' + value;
         console.log(toReq);
 
         Axios.get(toReq).then((response) => {

@@ -9,7 +9,7 @@ function ViewStudent() {
     let navigate = useNavigate();
 
     useEffect(() => {
-        Axios.get('http://localhost:3001/getStudents').then((response) => {
+        Axios.get('http://my-project-kitcoek.herokuapp.com/getStudents').then((response) => {
             const someList = response.data;
             setStudentList(someList);
             console.log(studentList);

@@ -18,7 +18,7 @@ function ViewEvents() {
 
     useEffect(() => {
         
-        let toReq = 'http://localhost:3001/getEvents/' + 'all/' + 'all';
+        let toReq = 'http://my-project-kitcoek.herokuapp.com/getEvents/' + 'all/' + 'all';
         Axios.get(toReq).then((response) => {
             const someList = response.data;
             setEventList(someList);
@@ -45,7 +45,7 @@ function ViewEvents() {
     const applyFilter = (e) => {
         e.preventDefault();
 
-        let toReq = 'http://localhost:3001/getEvents/' + filter + '/' + value;
+        let toReq = 'http://my-project-kitcoek.herokuapp.com/getEvents/' + filter + '/' + value;
         console.log(toReq);
 
         Axios.get(toReq).then((response) => {

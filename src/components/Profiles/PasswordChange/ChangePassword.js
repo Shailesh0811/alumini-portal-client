@@ -14,7 +14,7 @@ function ChangePassword() {
 
   const handleSubmit = e => {
     e.preventDefault();
-    let toReq = 'http://localhost:3001/updateLoginDetails/';
+    let toReq = 'http://my-project-kitcoek.herokuapp.com/updateLoginDetails/';
     let obj = {
         PRN: localStorage.getItem("PRN"),
         password: password

@@ -18,7 +18,7 @@ function Login() {
 
   const handleSubmit = e => {
     e.preventDefault();
-    let toReq = 'http://localhost:3001/loginDetails/' + PRN;
+    let toReq = 'http://my-project-kitcoek.herokuapp.com/loginDetails/' + PRN;
 
     Axios.get(toReq).then((response) => {
       const name = response.data[0].name;

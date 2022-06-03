@@ -61,7 +61,7 @@ function AddEvent() {
             'Content-Type': 'application/json'
         }
 
-        Axios.post('http://localhost:3001/addEvent', obj, {
+        Axios.post('http://my-project-kitcoek.herokuapp.com/addEvent', obj, {
             headers: headers
         }).then(() => {
             document.getElementById('result').innerHTML = "Successfully added Event";

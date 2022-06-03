@@ -16,7 +16,7 @@ function ViewAlumni() {
     let navigate = useNavigate();
 
     useEffect(() => {
-        Axios.get('http://localhost:3001/getAlumni/all/all').then((response) => {
+        Axios.get('http://my-project-kitcoek.herokuapp.com/getAlumni/all/all').then((response) => {
             const someList = response.data;
             setAlumniList(someList);
             console.log(alumniList);
@@ -38,7 +38,7 @@ function ViewAlumni() {
     const applyFilter = (e) => {
         e.preventDefault();
 
-        let toReq = 'http://localhost:3001/getAlumni/' + filter + '/' + value;
+        let toReq = 'http://my-project-kitcoek.herokuapp.com/getAlumni/' + filter + '/' + value;
         console.log(toReq);
 
         Axios.get(toReq).then((response) => {

@@ -12,7 +12,7 @@ function RemoveCoordinator() {
 
     const removeCoordinator = (e) => {
         e.preventDefault();
-        let toReq = 'http://localhost:3001/removeCoordinator/' + username;
+        let toReq = 'http://my-project-kitcoek.herokuapp.com/removeCoordinator/' + username;
 
         Axios.delete(toReq).then((response) => {
             document.getElementById('resultdiv').innerHTML = "Deleted Coordinator";
